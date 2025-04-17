@@ -9,6 +9,7 @@ import gsap from "gsap";
 import Testimonials from "./component/testimonials";
 
 import { ArrowDown, Briefcase, HeartHandshake, MessageCircle, Users } from 'lucide-react';
+import CircularText from "./component/CircularText";
 
 
 function App() {
@@ -175,6 +176,7 @@ function App() {
           </nav>
           <div className="textcontainer mt-32 w-full px-[20%]">
             <div className="text w-[50%]">
+              <CircularText />
               <h3 className="text-4xl leading-[1.2]">
                 At Thirtysixstudio, we build immersive digital experiences for
                 brands with a purpose.
