@@ -29,7 +29,7 @@ const testimonials = [
   },
 ];
 
-const TestimonialsPage = () => {
+const Testimonials = () => {
   const sectionRef = useRef(null);
   const textRefs = useRef([]);
   const overlayRef = useRef(null);
