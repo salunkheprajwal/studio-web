@@ -4,9 +4,9 @@ import Canvas from "./Canvas";
 import data from "./data";
 import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useState, useRef } from "react";
-import { useGSAP } from "@gsap/react";
+import Services from "./component/services";
 import gsap from "gsap";
-import { Circ, Expo } from "gsap/all";
+
 import { ArrowDown } from 'lucide-react';
 
 
@@ -185,6 +185,11 @@ function App() {
   </div>
 </div>
       </div>
+      <div className="w-full relative font-['Helvetica_Now_Display']">
+        {showCanvas &&
+          data[5].map((canvasdets, index) => <Canvas details={canvasdets} />)}
+          <Services/>
+          </div>
       
     </>
   );
