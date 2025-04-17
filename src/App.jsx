@@ -8,9 +8,14 @@ import Services from "./component/services";
 import gsap from "gsap";
 import Testimonials from "./component/testimonials";
 
-import { ArrowDown, Briefcase, HeartHandshake, MessageCircle, Users } from 'lucide-react';
+import {
+  ArrowDown,
+  Briefcase,
+  HeartHandshake,
+  MessageCircle,
+  Users,
+} from "lucide-react";
 import CircularText from "./component/CircularText";
-
 
 function App() {
   const [showCanvas, setShowCanvas] = useState(false);
@@ -64,7 +69,6 @@ function App() {
     const headingElement = headingref.current;
     headingElement.addEventListener("click", handleClick);
 
-   
     return () => headingElement.removeEventListener("click", handleClick);
   }, []);
 
@@ -79,19 +83,19 @@ function App() {
           data[0].map((canvasdets, index) => <Canvas details={canvasdets} />)}
         <div className="w-full relative z-[1] h-screen ">
           <nav className="w-full p-8 flex justify-between z-50">
-          <div>
-  <div className="brand text-3xl font-md">thirtysixstudios</div>
+            <div>
+              <div className="brand text-3xl font-md">thirtysixstudios</div>
 
-  <style jsx>{`
-    .brand {
-      background-image: linear-gradient(45deg, #ffffff, #ff3333);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-    }
-  `}</style>
-</div>
+              <style jsx>{`
+                .brand {
+                  background-image: linear-gradient(45deg, #ffffff, #ff3333);
+                  background-clip: text;
+                  -webkit-background-clip: text;
+                  color: transparent;
+                  -webkit-text-fill-color: transparent;
+                }
+              `}</style>
+            </div>
 
             <div className="links flex gap-8">
               {[

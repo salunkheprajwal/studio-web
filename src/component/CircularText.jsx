@@ -12,7 +12,7 @@ export default function CircularText() {
   };
   
   return (
-    <div className="absolute right-60 flex flex-col items-center">
+    <div className="fixed right-60 flex flex-col items-center">
       <div 
         className={`relative w-32 h-32 cursor-pointer ${isAnimating ? 'animate-spin' : ''}`}
         style={{ animationDuration: '8s' }}
