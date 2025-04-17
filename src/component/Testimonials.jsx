@@ -132,4 +132,4 @@ const TestimonialsPage = () => {
   );
 };
 
-export default TestimonialsPage;
+export default Testimonials;
