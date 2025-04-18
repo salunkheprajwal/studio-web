@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function CompanyValuesPage() {
   return (
-    <div className="text-amber-950 min-h-screen text-center  flex flex-col">
+    <div className="text-gray-500 text-center mt-32 flex flex-col">
       {/* Agile Section */}
       <section className="py-12 border-b border-gray-900 flex flex-row">
         <div className="w-1/2 pl-12">

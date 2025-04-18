@@ -163,8 +163,8 @@ const ServicesSection = () => {
       <div className="min-h-screen text-black p-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-24">
-            <h2 className="text-amber-950 text-2xl mb-4">Our Services</h2>
-            <h1 className="text-3xl md:text-4xl font-light leading-tight text-amber-950 max-w-9xl mx-auto">
+            <h2 className="text-gray-500 text-2xl mb-4">Our Services</h2>
+            <h1 className="text-3xl md:text-4xl font-light leading-tight text-gray-500 max-w-9xl mx-auto">
               Your Aspiration, Our Expertise: Tailored Services for
               <br className="mb-4" /> Unmatched Excellence.
             </h1>
@@ -187,7 +187,7 @@ const ServicesSection = () => {
                 >
                   <div className="flex items-center gap-12">
                     <span className="text-3xl font-light">{service.id}</span>
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-amber-950 group-hover:text-cyan-300 group-hover:scale-110 sm:group-hover:scale-110 lg:group-hover:scale-115 duration-300 ease-in-out transition-all">
+                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-gray-500 group-hover:text-cyan-300 group-hover:scale-110 sm:group-hover:scale-110 lg:group-hover:scale-115 duration-300 ease-in-out transition-all">
                       {service.title}
                     </h3>
                   </div>
@@ -221,7 +221,7 @@ const ServicesSection = () => {
                   >
                     <div className="mt-8 space-y-8">
                       <div className="border-l-2 border-gray-800 pl-6 max-w-2xl">
-                        <p className="text-amber-950 text-lg">
+                        <p className="text-gray-500 text-lg">
                           {service.content}
                         </p>
                       </div>
