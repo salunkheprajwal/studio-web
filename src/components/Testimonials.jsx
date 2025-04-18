@@ -6,29 +6,29 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// const testimonials = [
-//   {
-//     name: "Name",
-//     position: "CEO, Tech Solutions",
-//     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcaD9XCVB0ELCCJdktXzOOcHVaG3Zo-NBHlqk75s5o2m6qtTL3H7tZ6huybK87yXsAFw&usqp=CAU",
-//     quote:
-//       "TechTech has transformed our business with their seamless integrations and intuitive digital solutions.",
-//   },
-//   {
-//     name: "Name",
-//     position: "Founder, InnovateX",
-//     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcaD9XCVB0ELCCJdktXzOOcHVaG3Zo-NBHlqk75s5o2m6qtTL3H7tZ6huybK87yXsAFw&usqp=CAU",
-//     quote:
-//       "The ease of use and rapid implementation made our transition to digital workflows effortless and impactful.",
-//   },
-//   {
-//     name: "Name",
-//     position: "CTO, GrowthHub",
-//     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcaD9XCVB0ELCCJdktXzOOcHVaG3Zo-NBHlqk75s5o2m6qtTL3H7tZ6huybK87yXsAFw&usqp=CAU",
-//     quote:
-//       "With TechTech, we've scaled operations efficiently while maintaining our team's productivity.",
-//   },
-// ];
+const testimonials = [
+  {
+    name: "Name",
+    position: "CEO, Tech Solutions",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcaD9XCVB0ELCCJdktXzOOcHVaG3Zo-NBHlqk75s5o2m6qtTL3H7tZ6huybK87yXsAFw&usqp=CAU",
+    quote:
+      "TechTech has transformed our business with their seamless integrations and intuitive digital solutions.",
+  },
+  {
+    name: "Name",
+    position: "Founder, InnovateX",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcaD9XCVB0ELCCJdktXzOOcHVaG3Zo-NBHlqk75s5o2m6qtTL3H7tZ6huybK87yXsAFw&usqp=CAU",
+    quote:
+      "The ease of use and rapid implementation made our transition to digital workflows effortless and impactful.",
+  },
+  {
+    name: "Name",
+    position: "CTO, GrowthHub",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMcaD9XCVB0ELCCJdktXzOOcHVaG3Zo-NBHlqk75s5o2m6qtTL3H7tZ6huybK87yXsAFw&usqp=CAU",
+    quote:
+      "With TechTech, we've scaled operations efficiently while maintaining our team's productivity.",
+  },
+];
 
 const Testimonials = () => {
   const sectionRef = useRef(null);
