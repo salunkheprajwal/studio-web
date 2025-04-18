@@ -6,7 +6,6 @@ import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useState, useRef } from "react";
 import Services from "./components/services";
 import gsap from "gsap";
-import Testimonials from "./components/testimonials";
 import {
   ArrowDown,
   Briefcase,
@@ -326,11 +325,11 @@ function App() {
           data[5].map((canvasdets, index) => <Canvas details={canvasdets} />)}
         <Services />
       </div>
-      <div className="w-full relative font-['Helvetica_Now_Display']">
+      {/* <div className="w-full relative font-['Helvetica_Now_Display']">
         {showCanvas &&
           data[8].map((canvasdets, index) => <Canvas details={canvasdets} />)}
         <Testimonials />
-      </div>
+      </div> */}
     </>
   );
 }
