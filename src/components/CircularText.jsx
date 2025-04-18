@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 export default function CircularText() {
-  const text = "thirtysixstudios";
+  const text = "ehknulaSlawjarP";
   const letters = text.split('');
   const [isAnimating, setIsAnimating] = useState(true);
   
