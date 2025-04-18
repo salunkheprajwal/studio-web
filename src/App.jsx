@@ -4,10 +4,9 @@ import Canvas from "./Canvas";
 import data from "./data";
 import LocomotiveScroll from "locomotive-scroll";
 import { useEffect, useState, useRef } from "react";
-import Services from "./component/services";
+import Services from "./components/services";
 import gsap from "gsap";
-import Testimonials from "./component/testimonials";
-
+import Testimonials from "./components/testimonials";
 import {
   ArrowDown,
   Briefcase,
@@ -15,7 +14,7 @@ import {
   MessageCircle,
   Users,
 } from "lucide-react";
-import CircularText from "./component/CircularText";
+import CircularText from "./components/CircularText";
 
 function App() {
   const [showCanvas, setShowCanvas] = useState(false);
