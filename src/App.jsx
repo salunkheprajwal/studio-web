@@ -14,6 +14,7 @@ import {
   Users,
 } from "lucide-react";
 import CircularText from "./components/CircularText";
+import CompanyValuesPage from "./components/CompanyValuesPage";
 
 function App() {
   const [showCanvas, setShowCanvas] = useState(false);
@@ -176,7 +177,7 @@ function App() {
               })}
             </div>
           </nav>
-          <div className="textcontainer mt-32 w-full px-[20%]">
+          <div className="textcontainer mt-32 w-full text-amber-950 px-[20%]">
             <div className="text w-[50%]">
               <CircularText />
               <h3 className="text-4xl leading-[1.2]">
@@ -245,12 +246,12 @@ function App() {
       <div className="w-full relative mt-32 px-10">
         {showCanvas &&
           data[2].map((canvasdets, index) => <Canvas details={canvasdets} />)}
-        <h1 className="text-2xl tracking-tighter text-center">
+        <h1 className="text-2xl tracking-tighter text-amber-950 text-center">
           ABOUT THE BRAND
         </h1>
       </div>
 
-      <div className="w-full relative h-auto px-10">
+      <div className="w-full relative h-auto text-amber-950 px-10">
         {showCanvas &&
           data[8].map((canvasdets, index) => <Canvas details={canvasdets} />)}
         <div className="w-full relative mt-32 px-10">
@@ -290,7 +291,7 @@ function App() {
         </div>
       </div>
 
-      <div className="w-full relative mt-32 px-10 mb-32">
+      <div className="w-full relative mt-32  px-10 mb-32">
         {showCanvas &&
           data[4].map((canvasdets, index) => <Canvas details={canvasdets} />)}
         <div className="w-full relative mt-32 px-10">
@@ -300,10 +301,10 @@ function App() {
             <div className="absolute top-1/3 left-1/3 w-80 h-80 rounded-full border bg-white/30 border-white-700 opacity-20"></div>
 
             {/* Main content */}
-            <h1 className="text-5xl font-bold max-w-2xl mx-auto text-center mb-6">
+            <h1 className="text-5xl font-bold max-w-2xl mx-auto text-amber-950 text-center mb-6">
               Relate to our creative designs that are beyond your expectations
             </h1>
-            <p className="text-white text-center mb-16">
+            <p className="text-amber-950 text-center mb-16">
               Leading digital agency with solid design and development
               expertise.
             </p>
@@ -311,7 +312,7 @@ function App() {
             {/* Circular badge with arrow */}
             <div className="absolute bottom-12 right-16 flex items-center justify-center">
               <div className="rounded-full border bg-white/25 border-gray-400 p-6 flex flex-col items-center justify-center  text-xs text-gray-300 w-24 h-24 relative">
-                <span className="text-center leading-tight text-white mb-1">
+                <span className="text-center leading-tight text-amber-950 mb-1">
                   digital agency in the world
                 </span>
                 <ArrowDown size={20} className="mt-1" />
@@ -330,6 +331,11 @@ function App() {
           data[8].map((canvasdets, index) => <Canvas details={canvasdets} />)}
         <Testimonials />
       </div> */}
+         <div className="w-full relative font-['Helvetica_Now_Display']">
+        {showCanvas &&
+          data[9].map((canvasdets, index) => <Canvas details={canvasdets} />)}
+        <CompanyValuesPage />
+      </div>
     </>
   );
 }
